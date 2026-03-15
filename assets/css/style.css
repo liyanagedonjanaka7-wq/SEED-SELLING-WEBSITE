@@ -1,0 +1,70 @@
+/* Custom Styles for NextGen Agro */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #22c55e;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #16a34a;
+}
+
+/* Base Adjustments */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar active state styling */
+.nav-link.active {
+    color: #16a34a;
+    border-bottom: 2px solid #16a34a;
+}
+
+/* Hide scrollbar for category pills if applicable */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom Selection */
+::selection {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+/* Smooth Image Loading */
+img {
+    transition: opacity 0.3s ease-in-out;
+}
+img[loading] {
+    opacity: 0;
+}
+img.loaded {
+    opacity: 1;
+}
+
+/* Animated Gradient Background */
+.bg-animated-gradient {
+    background: linear-gradient(270deg, #dcfce7, #fefce8, #e0f2fe);
+    background-size: 600% 600%;
+    animation: GradientAnimation 15s ease infinite;
+}
+
+@keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

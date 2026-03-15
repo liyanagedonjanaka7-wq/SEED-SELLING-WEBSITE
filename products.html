@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Seeds - NextGen Agro</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Browse our premium selection of vegetable and flower seeds. Including Aster, Cockscomb, Rose, Marigold, and H1 Hybrid Scotch Bonnet.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        },
+                        accent: {
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-600 to-brand-400 flex items-center justify-center text-white shadow-lg shadow-brand-500/30">
+                            <i class="fa-solid fa-leaf text-xl text-white drop-shadow-sm"></i>
+                        </div>
+                        <span class="font-serif font-bold text-2xl text-gray-900 tracking-tight">NextGen<span class="text-brand-600">Agro</span></span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-600 font-medium transition-colors border-transparent border-b-2 pb-1">Home</a>
+                    <a href="products.html" class="text-brand-600 font-medium transition-colors border-b-2 border-brand-600 pb-1">Seeds</a>
+                    <a href="about.html" class="text-gray-600 hover:text-brand-600 font-medium transition-colors border-transparent border-b-2 pb-1">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-brand-600 font-medium transition-colors border-transparent border-b-2 pb-1">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-600 focus:outline-none p-2" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50">Home</a>
+                <a href="products.html" class="block px-3 py-3 rounded-md text-base font-medium text-brand-600 bg-brand-50">Seeds</a>
+                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50">About</a>
+                <a href="contact.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-32 pb-16 bg-brand-50 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-animated-gradient opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 font-serif mb-4">Our Premium Seeds Collection</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Discover our carefully curated selection of high-yield vegetable seeds and vibrant flower varieties.</p>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="py-16 bg-gray-50 flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="px-6 py-2 rounded-full bg-brand-600 text-white font-medium shadow-md transition hover:-translate-y-0.5">All Seeds</button>
+                <button class="px-6 py-2 rounded-full bg-white text-gray-700 border border-gray-200 font-medium shadow-sm transition hover:border-brand-300 hover:text-brand-600 hover:-translate-y-0.5">Vegetables</button>
+                <button class="px-6 py-2 rounded-full bg-white text-gray-700 border border-gray-200 font-medium shadow-sm transition hover:border-brand-300 hover:text-brand-600 hover:-translate-y-0.5">Flowers</button>
+                <button class="px-6 py-2 rounded-full bg-white text-gray-700 border border-gray-200 font-medium shadow-sm transition hover:border-brand-300 hover:text-brand-600 hover:-translate-y-0.5">Hybrids</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                
+                <!-- Product 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="relative aspect-square overflow-hidden bg-gray-100">
+                        <img id="img-buneela" src="assets/images/buneela_beeja.png" alt="Buneela Beeja" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 bg-white text-gray-900 px-6 py-2 rounded-full font-medium shadow-lg hover:bg-brand-50 hover:text-brand-600 text-sm whitespace-nowrap">
+                            Quick View
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <p class="text-xs text-brand-500 font-bold uppercase tracking-wider mb-2">Vegetable</p>
+                        <h3 class="text-lg font-bold text-gray-900 font-serif mb-2">Buneela Beeja</h3>
+                        <p class="text-gray-500 text-sm mb-4 line-clamp-2">Premium green beans seeds known for rapid growth and abundant yield.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <span class="text-gray-900 font-bold text-lg">LKR 450</span>
+                            <button class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Add to cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="relative aspect-square overflow-hidden bg-gray-100">
+                        <img id="img-pokuru" src="assets/images/pokuru_atapethiya.png" alt="Pokuru Atapethiya Beeja" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 bg-white text-gray-900 px-6 py-2 rounded-full font-medium shadow-lg hover:bg-brand-50 hover:text-brand-600 text-sm whitespace-nowrap">
+                            Quick View
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <p class="text-xs text-pink-500 font-bold uppercase tracking-wider mb-2">Flower</p>
+                        <h3 class="text-lg font-bold text-gray-900 font-serif mb-2">Pokuru Atapethiya Beeja</h3>
+                        <p class="text-gray-500 text-sm mb-4 line-clamp-2">Stunning Aster/Sunflower variety seeds producing vibrant clustered petals.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <span class="text-gray-900 font-bold text-lg">LKR 350</span>
+                            <button class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Add to cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="relative aspect-square overflow-hidden bg-gray-100">
+                        <img id="img-kukul" src="assets/images/kukul_karamal.png" alt="Kukul Karamal Beeja" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 bg-white text-gray-900 px-6 py-2 rounded-full font-medium shadow-lg hover:bg-brand-50 hover:text-brand-600 text-sm whitespace-nowrap">
+                            Quick View
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <p class="text-xs text-pink-500 font-bold uppercase tracking-wider mb-2">Flower</p>
+                        <h3 class="text-lg font-bold text-gray-900 font-serif mb-2">Kukul Karamal Beeja</h3>
+                        <p class="text-gray-500 text-sm mb-4 line-clamp-2">Exotic Cockscomb seeds yielding velvet-like textured beautiful blooms.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <span class="text-gray-900 font-bold text-lg">LKR 400</span>
+                            <button class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Add to cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="relative aspect-square overflow-hidden bg-gray-100">
+                        <div class="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-brand-600 shadow-sm">Popular</div>
+                        <img id="img-rosa" src="https://images.unsplash.com/photo-1560790671-b76ca4de55ef?q=80&w=600&auto=format&fit=crop" alt="Rosa Mal Beeja" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 bg-white text-gray-900 px-6 py-2 rounded-full font-medium shadow-lg hover:bg-brand-50 hover:text-brand-600 text-sm whitespace-nowrap">
+                            Quick View
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <p class="text-xs text-pink-500 font-bold uppercase tracking-wider mb-2">Flower</p>
+                        <h3 class="text-lg font-bold text-gray-900 font-serif mb-2">Rosa Mal Beeja</h3>
+                        <p class="text-gray-500 text-sm mb-4 line-clamp-2">Premium classic rose seeds curated for perfect fragrance and petal structure.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <span class="text-gray-900 font-bold text-lg">LKR 550</span>
+                            <button class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Add to cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="relative aspect-square overflow-hidden bg-gray-100">
+                        <img id="img-daspethiya" src="https://images.unsplash.com/photo-1605634571739-16ce3c62f2ae?q=80&w=600&auto=format&fit=crop" alt="Daspethiya Mal Beeja" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 bg-white text-gray-900 px-6 py-2 rounded-full font-medium shadow-lg hover:bg-brand-50 hover:text-brand-600 text-sm whitespace-nowrap">
+                            Quick View
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <p class="text-xs text-orange-500 font-bold uppercase tracking-wider mb-2">Flower</p>
+                        <h3 class="text-lg font-bold text-gray-900 font-serif mb-2">Daspethiya Mal Beeja</h3>
+                        <p class="text-gray-500 text-sm mb-4 line-clamp-2">Vibrant yellow and orange Marigold seeds, excellent for garden borders.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <span class="text-gray-900 font-bold text-lg">LKR 300</span>
+                            <button class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Add to cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="relative aspect-square overflow-hidden bg-gray-100">
+                        <img id="img-seeniyas" src="https://images.unsplash.com/photo-1596769947706-5389dd3e0d86?q=80&w=600&auto=format&fit=crop" alt="Seeniyas Mal Beeja" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 bg-white text-gray-900 px-6 py-2 rounded-full font-medium shadow-lg hover:bg-brand-50 hover:text-brand-600 text-sm whitespace-nowrap">
+                            Quick View
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <p class="text-xs text-purple-500 font-bold uppercase tracking-wider mb-2">Flower</p>
+                        <h3 class="text-lg font-bold text-gray-900 font-serif mb-2">Seeniyas Mal Beeja</h3>
+                        <p class="text-gray-500 text-sm mb-4 line-clamp-2">Multi-colored Zinnia seeds perfect for attracting butterflies to your garden.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <span class="text-gray-900 font-bold text-lg">LKR 320</span>
+                            <button class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Add to cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="relative aspect-square overflow-hidden bg-gray-100">
+                        <div class="absolute top-4 right-4 z-10 bg-red-500/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-white shadow-sm">Hot</div>
+                        <img id="img-scotch" src="https://images.unsplash.com/photo-1592484641979-43cce44ec1eb?q=80&w=600&auto=format&fit=crop" alt="H1 Hybrid Scotch Bonnet Beeja" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 bg-white text-gray-900 px-6 py-2 rounded-full font-medium shadow-lg hover:bg-brand-50 hover:text-brand-600 text-sm whitespace-nowrap">
+                            Quick View
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <p class="text-xs text-red-500 font-bold uppercase tracking-wider mb-2">Hybrid Vegetable</p>
+                        <h3 class="text-lg font-bold text-gray-900 font-serif mb-2">H1 Hybrid Scotch Bonnet Beeja</h3>
+                        <p class="text-gray-500 text-sm mb-4 line-clamp-2">Extremely spicy, high-yield hybrid pepper seeds engineered for robust growth.</p>
+                        <div class="mt-auto flex justify-between items-center">
+                            <span class="text-gray-900 font-bold text-lg">LKR 650</span>
+                            <button class="w-10 h-10 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors" aria-label="Add to cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Summary (Mini Footer) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-2 mb-6">
+                <i class="fa-solid fa-leaf text-brand-500"></i>
+                <span class="font-serif font-bold text-xl tracking-tight">NextGen<span class="text-brand-400">Agro</span></span>
+            </div>
+            <p class="text-gray-400 text-sm mb-6 max-w-md mx-auto">Cultivating excellence with every seed. Providing premium organic, hybrid, flower and vegetable seeds across Sri Lanka.</p>
+            <div class="flex gap-4 justify-center mb-8">
+                <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand-500 hover:text-white transition-colors"><i class="fa-brands fa-instagram text-sm"></i></a>
+            </div>
+            <p class="text-gray-600 text-sm">&copy; 2026 NextGen Agro.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
